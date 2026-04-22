@@ -1,0 +1,164 @@
+/* --- RESET ET POLICES --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  padding: 40px 0;
+}
+
+/* --- CONTENEUR PRINCIPAL (Feuille A4) --- */
+.cv-container {
+  background-color: white;
+  width: 210mm;
+  min-height: 297mm;
+  display: flex;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* --- SIDEBAR (GAUCHE) --- */
+.sidebar {
+  background-color: #02b96d;
+  color: white;
+  width: 30%;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.profile-img-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 4px solid #03270e;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.sidebar h3 {
+  text-transform: uppercase;
+  margin: 20px 0 10px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  padding-bottom: 5px;
+  font-size: 1.1rem;
+}
+
+.sidebar ul {
+  list-style: none;
+  text-align: left;
+  margin-left: 10px;
+}
+
+.sidebar li {
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar li i {
+  width: 25px;
+  margin-right: 10px;
+}
+
+/* --- CONTENU PRINCIPAL (DROITE) --- */
+.main-content {
+  width: 70%;
+  padding: 40px;
+  color: #333;
+}
+
+.header-name h1 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #2c3e50;
+  line-height: 1.2;
+}
+
+.header-name h2 {
+  font-size: 1.3rem;
+  font-weight: 300;
+  color: #7f8c8d;
+  margin-bottom: 30px;
+}
+
+.main-content h3 {
+  color: #2c3e50;
+  text-transform: uppercase;
+  border-bottom: 2px solid #02b96d;
+  padding-bottom: 5px;
+  margin: 30px 0 15px 0;
+}
+
+.main-content h3 i {
+  margin-right: 10px;
+  color: #02b96d;
+}
+
+.job,
+.degree {
+  margin-bottom: 20px;
+}
+
+.job h4,
+.degree h4 {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.company {
+  font-weight: 500;
+  color: #02b96d;
+  font-size: 0.95rem;
+  margin-bottom: 5px;
+}
+
+.date {
+  font-style: italic;
+  color: #7f8c8d;
+  font-size: 0.9rem;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.main-content ul {
+  margin-left: 20px;
+  margin-top: 5px;
+}
+
+.main-content li {
+  margin-bottom: 5px;
+}
+
+.profile-summary p {
+  line-height: 1.7;
+  color: #555;
+}
+
+/* --- RESPONSIVE (Pour mobile) --- */
+@media (max-width: 768px) {
+  .cv-container {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+  .sidebar,
+  .main-content {
+    width: 100%;
+  }
+  .header-name h1 {
+    font-size: 1.5rem;
+  }
+}
